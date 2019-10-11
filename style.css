@@ -10,7 +10,6 @@ body {
 	background-position: center right;
   	color: rgb(100,100,100);
   	font-family: sans-serif;
-  	font-size: 14px;
   	line-height: 1.3;
 
 }
@@ -49,13 +48,15 @@ p{
 	font-family: 'Merriweather Sans', sans-serif;
 	color: gray;
 	font-size: 18px;
+	padding: 20px;
 }
+
 
 /* BOXES   */
 
 
 .blue-background{
-	padding: 10px 2px 10px 2px;
+	padding: 10px;
 	margin: 20px;
 	background-color: #040428;
 	border-color: yellow;
@@ -64,41 +65,30 @@ p{
 }
 
 .clear-box{
-	padding: 20px;
+	padding: 10px;
 	margin: 10px;
 	background-color: rgba(54, 25, 25, .00004);
 	border-color: red;
 	border-style: solid;
 	border-width: 5px;
 }
-/* SOLAR PANELS IMAGES */
-.image-box{
-	padding: 10px 2px 10px 2px;
-	margin: 10px;
-	background-color: rgba(54, 25, 25, .00004);
-	border-width: 5px;
+.clear-box p{
+	padding: 5px;
 }
+/* SOLAR PANELS IMAGES */
 
 .container {
-    width: 400px;
-    height: 200px;
-    display: table; 
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 20px;
 }
-.container .image-container {
-    text-align: center;
-    vertical-align: middle;
-    display: table-cell;
+.container img {
+	height: 250px;
+	width: 250px;
 }
 
-.container .image-container img {
-    max-width: 100%;
-    max-height: 100%;        
-}
-.img-size {
-    height: 320px;
-	width: 500px;
-}
-.image-nasa{
+.image-nasa img{
 	width: 400px;
   	margin: 15%;
 }
@@ -189,9 +179,32 @@ p{
 		grid-column: 2;
 		grid-row: 6;
 	}
-	.conclusion{
+	#solar-panel-section .conclusion{
 		grid-column: 1/3;
 		grid-row: 7;
+	}
+
+	#radio-reciever{
+		display: grid;
+		grid-template-columns: 60% 35%;
+		grid-gap: 10px;
+		padding: 20px;
+		margin: 20px;
+	}
+	.radio-intro{
+		grid-column: 1/3;
+		grid-row: 1;
+	}
+	.radio-img{
+		grid-column: 2;
+		grid-row: 2/3;
+	}
+	.radio-img img{
+		width: 100%;
+	}
+	.results{
+		grid-column: 1/2;
+		grid-row: 2;
 	}
   
 }
