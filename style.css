@@ -66,13 +66,17 @@ p{
 .clear-box{
 	padding: 10px;
 	margin: 10px;
-	background-color: rgba(54, 25, 25, .00004);
-	border-color: red;
-	border-style: solid;
-	border-width: 5px;
+	border-left: red solid 5px;
+	border-bottom: red solid 5px; 
+	border-radius: 20px;
 }
 .clear-box p{
 	padding: 5px;
+}
+.clear-box h3{
+	padding-bottom: 20px;
+    padding-top: 20px; 
+
 }
 /* SOLAR PANELS IMAGES */
 
@@ -85,11 +89,16 @@ p{
 .container img {
 	height: 250px;
 	width: 250px;
+	margin: 2% auto;
 }
 
 .image-nasa img{
 	width: 350px;
   	margin: 15%;
+}
+.radio-img img{
+	margin: 20px;
+	width: 250px;
 }
 
 
@@ -123,7 +132,7 @@ p{
 
 	#solar-panel-section{
 		display: grid;
-		grid-template-columns: 70% 30%;
+		grid-template-columns: 50% 50%;
 		grid-gap: 10px;
 		padding: 20px;
 		margin: 20px;
@@ -144,33 +153,17 @@ p{
 		grid-column: 1/2;
 		grid-row: 3;
 	}
-	.gallium-img{
+	.indium{
 		grid-column: 2;
 		grid-row: 3;
 	}
-	.indium{
-		grid-column: 1/2;
-		grid-row: 4;
-	}
-	.indium-img{
-		grid-column: 2;
-		grid-row: 4;
-	}
 	.solar-sphere{
-		grid-column: 1/2;
-		grid-row: 5;
-	}
-	.solar-sphere-img{
 		grid-column: 2;
-		grid-row: 5;
+		grid-row: 4;
 	}
 	.pumpkin{
-		grid-column: 1/2;
-		grid-row: 6;
-	}
-	.pumpkin-img{
-		grid-column: 2;
-		grid-row: 6;
+		grid-column: 1;
+		grid-row: 4;
 	}
 	#solar-panel-section .conclusion{
 		grid-column: 1/3;
